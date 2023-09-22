@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luck Game Input</title>
+</head>
+<body>
+    <h1>Enter a number:</h1>
+    <input type="number" id="input_number" required>
+    <button onclick="playGame()">Play</button>
+
+    <script>
+        async function playGame() {
+            const inputNumber = document.getElementById('input_number').value;
+
+            const response = await fetch(`http://127.0.0.1:8000/luck_game?input_number=${inputNumber}`);
+            const data = await response.json();
+
+            alert(data.result);
+            console.log('Generated Number:', data.generated_number);
+        }
+    </script>
+    <p>{{ result }}</p>
+</body>
+</html>

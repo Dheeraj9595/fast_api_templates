@@ -1,0 +1,25 @@
+/* style.css */
+
+body {
+    background-color: lightgray;
+}
+
+h1{
+    color: blue;
+}
+
+p {
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+
+.colorful-text:hover {
+    color: red; /* Change to any color you want */
+    text-shadow: blueviolet;
+}
+
+.input-class{
+    width: 200px;
+    height: 20px;
+}
