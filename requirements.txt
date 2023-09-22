@@ -45,8 +45,6 @@ platformdirs
 pluggy
 protobuf
 pycparser
-pydantic
-pydantic_core
 Pygments
 PyJWT
 pymdown-extensions
